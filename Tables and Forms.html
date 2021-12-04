@@ -1,0 +1,84 @@
+<html>
+
+<head>Tables and Forms</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Maths</th>
+            <th>Science</th>
+            <th>English</th>
+        </tr>
+        <tr>
+            <th rowspan="2">a</th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <!-- <th>b</th> -->
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <th>c</th>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+
+    </table>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Maths</th>
+            <th>Science</th>
+            <th>English</th>
+        </tr>
+        <tr>
+            <th>a</th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <th>b</th>
+            <td colspan="2">4</td>
+            <!-- <td>5</td> -->
+            <td>6</td>
+        </tr>
+        <tr>
+            <th>c</th>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table><br>
+    <form>
+        <label>Name:</label>
+        <input type="text" placeholder="Enter your name" name="name"><br><br>
+        <label>Password:</label>
+        <input type="password" placeholder="Enter your password" name="password"><br><br>
+        <label>Date:</label>
+        <input type="date" name="date"><br><br>
+        <label>Time:</label>
+        <input type="time" name="time"><br><br>
+        <label>Number:</label>
+        <input type="Number" placeholder="Enter your number" name="number"><br><br>
+        <label>Email:</label>
+        <input type="email" placeholder="Enter your email" name="email"><br><br>
+        <label>Color:</label>
+        <input type="color"><br><br>
+        <label>File:</label>
+        <input type="file"><br><br>
+        <label>Image:</label>
+        <input type="image">
+        <input type="button" and value="Click to submit"><br>
+        <button>Click to submit</button>
+    </form>
+
+</body>
+
+</html>
