@@ -1,0 +1,37 @@
+*{
+    background-color: #9FAD97;
+}
+.Para-C
+{
+    text-align: center;
+}
+.Para-R
+{
+    text-align: right;
+}
+.Green
+{
+    color: rgb(0, 97, 0);
+}
+.Trebuchet
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.Big
+{
+    font-size: 48px;   
+}
+.Small
+{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:x-small;
+}
+.Image
+{
+    text-align: center;
+}
+.ImageHyperlink
+{
+    text-align: center;
+}
