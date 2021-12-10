@@ -1,0 +1,25 @@
+
+.container{
+    background-image: url(https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2014_FallP8/Rami_Portfolio_Period8/unit4_css/project2/cssProject2/grid.png);
+    height: 580px;
+    width: 650px;
+    margin: auto;
+}
+.OuterBox
+{
+    background-color: gray;
+    height: 90px;
+    width: 620px;
+    opacity: 0.8;
+    margin: 25px 0px 0 10px;
+    float: left;
+}
+.InnerBox
+{
+    background-color: gray;
+    height: 140px;
+    width: 140;
+    margin: 20px 10 0 10;
+    opacity: 0.8;
+    float: left;
+}
