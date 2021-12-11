@@ -1,0 +1,21 @@
+ body
+{
+    background-color: #CBD6CB;
+    font-size: big;
+    font-family: Verdana, Geneva, sans-serif;
+}
+div
+{
+    text-align: center;
+    margin:auto;
+    max-width: 1400px;
+}
+table
+{
+    width: 1050px;
+    margin: auto;
+    text-align: center;
+}
+a{
+    color: rgb(100, 207, 100);
+}
