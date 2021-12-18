@@ -1,0 +1,169 @@
+body
+{
+    font-family: 'Merriweather', serif;
+    margin: 0px;
+    font-size: 25px;
+}
+section
+{
+    /* width: 100%; */
+}
+
+/* Intro Section */
+.intro
+{
+    background-color: rgb(228, 245, 239);
+    color: rgb(4, 175, 187);
+    margin:auto ;
+    width: 100%;
+    text-align: center;
+}
+.program
+{
+    font-size: 60px;
+    margin: 30px 0;
+    margin: 30px 0;
+    
+}
+.name
+{
+    margin: 30px 0;
+    font-family: 'Sacramento', cursive;
+    font-weight: bolder;
+    font-size: 120px;
+}
+
+.cloud1
+{
+    width: 220px;
+    padding: 60px 0 30px 0;
+    position: relative;
+    left: 500px;
+}
+.cloud2
+{
+    width: 220px;
+    padding: 70px 0 0 0;
+    position: relative;
+    right: 550px;
+    margin-bottom: -90px;
+}
+.mountain
+{
+    width: 850px;
+    height: 600px;
+}
+
+/* Content Section */
+.content
+{
+    margin: 100px;
+    text-align: center;
+}
+.Photo
+{
+    border-radius: 800px;
+    height: 350px;
+    width: 350px;
+}
+h1
+{
+    font-size: 2.5em;
+    color: rgb(4, 175, 187);
+}
+.fa-heart
+{
+    color: red;
+}
+.color
+{
+    font-weight: bolder;
+    color: rgb(10, 180, 192);
+}
+hr
+{
+    border-top:10px dotted rgba(49, 198, 209, 0.301);
+    width: 125px;
+}
+.design
+{
+    width: 1000px;
+    text-align: left;
+    margin: 120px auto;
+}
+.giphy-embed
+{
+   float: left;
+   margin-right: 35px;
+}
+.giphy-embed:hover
+{
+    cursor: none;
+}
+.netflix
+{
+    width: 1000px;
+    text-align: right;
+    margin: 200px auto;
+}
+.netflixImg
+{
+    float: right;
+    margin-left: 35px;
+}
+.body
+{
+    width: 1000px;
+    margin: auto;
+    line-height: 2em;
+}
+button
+{
+    margin: 100px 0 20px 0;
+    color: white;
+    font-size: xx-large;
+    background-color: rgb(64, 188, 197);
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+button:active
+{
+    transform: scale(0.95);
+}
+button:hover
+{
+    cursor: pointer;
+    opacity: 0.9;
+}
+a
+{
+    text-decoration: none;
+}
+
+/* Footer Section */
+.Footer
+{
+    margin: none;
+    background-color: rgb(10, 180, 192) ;
+    text-align: center;
+}
+a
+{
+    color: rgb(80, 104, 105);
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+a:hover
+{
+    color: white;
+}
+.fa-github
+{
+    margin: 50px 7px;
+}
+
+
+

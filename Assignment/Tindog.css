@@ -1,0 +1,174 @@
+body
+{
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+/* Intro Section  */
+.intro
+{
+    background-color: #ff4c68;
+    color: white;
+    padding-bottom: 3rem;
+}
+.navbar-brand
+{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 2rem 0;
+}
+.navbar-nav{
+    margin-left: auto;
+}
+.collapse li
+{
+    margin-left:3rem;
+}
+.intro-text
+{
+    font-size: 3rem; 
+    line-height: 1.5;
+    padding: 2rem;
+}
+.download
+{
+    margin: 1rem 1rem 5rem 1rem;
+}
+.iphone
+{
+    position: relative;
+}
+.iphone-img
+{
+    width: 55%;
+    transform:rotate(25deg);
+    position:absolute;
+    right:30%;
+}
+
+/* Features Section  */
+.features
+{
+    position: relative;
+    background-color: white;
+    padding: 3rem;
+}
+.features i
+{
+    color: #ff4c68;
+    font-size: 5rem;
+    margin: 1rem;
+}
+.features h5
+{
+    font-weight: bold;
+}
+.fcard
+{
+    padding: 2rem;
+}
+
+/* Testimonials Section  */
+.testimonials
+{
+    background-color: #ff4c68;
+    color: white;
+    padding: 3rem;
+}
+.carousel-item h1
+{
+    line-height: 2;
+    padding:0 6rem;
+}
+.carousel-control-prev-icon
+{
+    margin-right: 3rem;
+}
+.carousel-control-next-icon
+{
+    margin-left: 3rem;
+}
+.partners
+{
+    width: 17%;
+    padding: 1rem;
+}
+.pebbles
+{
+    width: 8%;
+    border-radius: 100%;
+}
+.beverly
+{
+    width: 8%;
+    border-radius: 100%;
+}
+.fa-chevron-right, .fa-chevron-left
+{
+    font-size: 2rem;
+}
+
+/* Pricing Section  */
+.pricing
+{
+    margin: 5rem auto;
+}
+.card 
+{
+    margin: 1rem;
+}
+.card-header
+{
+    font-size: 1.7rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+.card-title
+{
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+.card-body a
+{
+    width: 85%;
+}
+
+/* Download Section  */
+.downloads
+{
+    background-color: #ff4c68;
+    color: white;
+    padding: 0.5rem;
+}
+.downloads h1
+{
+    font-size: 3rem;
+    margin-top:3rem;
+    padding: 4rem;
+}
+.downloads button
+{
+    margin:0 2rem 5rem;
+}
+
+/* Social Section  */
+.footer
+{
+    padding: 3rem;
+}
+.footer i
+{
+    padding: 1rem;
+}
+.footer p
+{
+    margin: 1rem;
+}
+
+@media (max-width: 1028px){
+    .iphone-img
+    {
+        position: static;
+        transform: rotate(0);
+    }
+} 

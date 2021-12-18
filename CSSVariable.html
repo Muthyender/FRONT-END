@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        /* Global variable */
+        :root 
+        {
+            --globalFont: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+            --globalColor: blue;
+        }
+
+        .div1
+        {
+            /* Local variable */
+            /* --localColor: red; */
+            font-family:var(--globalFont);
+        }
+        .div2
+        {
+            /* color: var(--localColor); */
+            color: var(--globalColor);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, pariatur?</div>
+
+    <div class="div2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, maiores!</div>
+</body>
+
+</html>
