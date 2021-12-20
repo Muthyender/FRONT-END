@@ -1,0 +1,235 @@
+*
+{
+    text-align: center;
+}
+/* Navbar  */
+.navbar-brand
+{
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    margin:0 1rem;
+}
+.navbar-brand span
+{
+    color: rgb(49, 247, 230);
+}
+.nav-item
+{
+    margin: 1rem;
+}
+.c1
+{
+    width: max-content;
+}
+
+.btn-outline-info
+{
+    padding: 0.7em 3rem;
+    color: black;
+    border: 1px solid  lightgray;
+    text-align: end;
+}
+.btn-outline-info:hover
+{
+    background-color: rgb(49, 247, 230);
+    color: white;
+}
+.justify-content-end
+{
+    text-align: right;
+}
+
+/* Intro Section  */
+#intro
+{
+    background-image: url(https://raw.githubusercontent.com/duttrohan0302/dec16_bootstrapUI/master/images/image2.jpg) ;
+    color: white;
+    background-attachment: fixed;
+	background-size: cover;
+    padding-bottom: 7rem;
+    margin-right: none;
+}
+#intro h1
+{
+    padding: 10rem 0 2rem;
+    font-size: 3rem;
+    font-family: 'Righteous', cursive;
+}
+#intro h6
+{
+    padding-bottom: 2rem;
+    font-family: 'Righteous', cursive;
+}
+#intro button
+{
+    margin: 1rem;
+    padding: 0.8rem;
+}
+.btn-dark
+{
+    background-color: rgba(0,0,0,1);
+}
+.btn-warning
+{
+    background-color: rgb(241, 223, 190);
+    border: none;
+}
+.btn-warning:hover,.btn-warning:active
+{
+    background-color: white;
+    border: 10px whitesmoke;
+}
+.btn-warning:focus
+{
+    background-color: rgb(241, 223, 190);
+    box-shadow:0 0 0 3px rgba(245, 245, 245, 0.37);
+}
+
+/* Templates Section  */
+#templates
+{
+    padding: 1rem;
+}
+#templates h1
+{
+    margin: 2rem 0;
+}
+.card
+{
+    margin: 1.5rem auto;
+}
+
+/* Show Section  */
+#show
+{
+    background-image: url(https://github.com/duttrohan0302/dec16_bootstrapUI/blob/master/images/image3.jpg?raw=true);
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+}
+#show h1
+{
+    padding: 8rem 0 2rem 0;
+    font-family: 'Righteous', cursive;
+}
+#show p
+{
+    padding: 2rem 0;
+}
+#show button
+{
+    margin: 1rem 0 5rem;
+    border-radius: 0;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    box-shadow: 0 0 0 2px rgb(170, 43, 43);
+}
+
+/* Features Section  */
+#features
+{
+    padding: 4rem 0;
+}
+.heading
+{
+    text-align: left;
+}
+.heading1
+{
+    text-align: left;
+    margin-left: 1rem;
+}
+.para1
+{
+    text-align: left;
+    padding: 0.5rem 1rem 1rem 4rem;
+}
+.para
+{
+    text-align: left;
+    padding: 0.5rem 1rem 1rem 4rem;
+}
+.fas
+{
+    color: rgb(51, 170, 170);
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+/* Join Us Section  */
+#join
+{
+    background-color: rgb(45, 56, 63);
+    color:white;
+    padding: 4rem 0;
+}
+#join .row
+{
+    text-align: right;
+}
+#join h1
+{
+    padding: 2rem;
+}
+#join button
+{
+    margin-bottom: 2rem;
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 0.5rem 2rem; 
+}
+#join button:hover
+{
+    background-color: rgb(171, 235, 171);
+}
+#join p
+{
+    font-size: larger;
+    padding: 1rem;
+    line-height: 2;
+}
+
+/* Contact Section  */
+#contact
+{
+    padding: 3rem 0;
+}
+#contact h3
+{
+    padding-bottom: 1rem;
+    font-family: 'Righteous', cursive;
+}
+.input-group
+{
+    width: 60%;
+    margin: auto;
+}
+.social
+{
+    padding: 1rem;
+}
+.social a
+{
+    padding: 1rem;
+}
+.social a:nth-child(1)
+{
+    color: #4267B2;
+}
+.social a:nth-child(2)
+{
+    color: #1DA1F2;
+}
+.social a:nth-child(3)
+{
+    color: #ab4cd7;
+}
+.social a:nth-child(4)
+{
+    color: red;
+}
+.copy
+{
+    color: greenyellow;
+}
