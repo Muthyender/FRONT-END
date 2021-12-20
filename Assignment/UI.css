@@ -27,7 +27,6 @@
     padding: 0.7em 3rem;
     color: black;
     border: 1px solid  lightgray;
-    text-align: end;
 }
 .btn-outline-info:hover
 {
@@ -232,4 +231,16 @@
 .copy
 {
     color: greenyellow;
+}
+
+@media screen and (max-width: 992px) 
+{
+    .nav-link
+    {
+        margin: auto;
+    }
+    .justify-content-end 
+    {
+        text-align: center;
+    }
 }
