@@ -16,13 +16,13 @@ function myFunction(num)
     {
         case 1: panel1.classList.add("active")
         break
-        case 2: panel1.classList.add("active")
+        case 2: panel2.classList.add("active")
         break
-        case 3: panel1.classList.add("active")
+        case 3: panel3.classList.add("active")
         break
-        case 4: panel1.classList.add("active")
+        case 4: panel4.classList.add("active")
         break
-        case 5: panel1.classList.add("active")
+        case 5: panel5.classList.add("active")
         break
     }
 }
