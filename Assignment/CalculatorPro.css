@@ -1,0 +1,57 @@
+.container
+{
+    margin: 3rem auto;
+    box-shadow: 0 0 20px 5px grey;
+    width: 400px;
+    height: 600px;
+}
+#display
+{
+    display: flex;
+    border: 1px solid gray;
+    height: 100px;
+    justify-content: end;
+    font-size: 2rem;
+    align-items: center;
+    padding:0 5px;
+}
+.containerin
+{
+    height: 500px;
+    margin: auto;    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.button
+{
+    border: 1px solid gray;
+    padding: 2rem;
+    margin: 0;
+    cursor: pointer;
+    text-align: center;
+    font-size: x-large;
+}
+.button:hover, #operator:hover, #back:hover, #clear:hover
+{
+    background-color: black;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+#equal
+{
+    background-color: rgba(0, 0, 255, 0.685);
+    color: white;
+}
+.operator
+{
+    color: rgba(0, 0, 255, 1);
+    font-weight: bolder;
+    font-size: 30px;
+}
+#clear, #back
+{
+    color: red;
+}
+
+
+

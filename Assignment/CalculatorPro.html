@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="CalculatorPro.css">
+</head>
+<body>
+
+   <div class="container">
+       <div id="display"></div>
+        <div class="containerin">
+            <div class="button" onclick="clickxyz('(')">(</div>
+            <div class="button" onclick="clickxyz(')')">)</div>
+            <div class="button" id="clear" onclick="clearxyz()">C</div>
+            <div class="button" id="back" onclick="back()">⌫</div>
+
+            <div class="button" onclick="clickxyz('7')">7</div>
+            <div class="button" onclick="clickxyz('8')">8</div>
+            <div class="button" onclick="clickxyz('9')">9</div>
+            <div class="button operator" onclick="clickxyz('/')">/</div>
+
+            <div class="button" onclick="clickxyz('4')">4</div>
+            <div class="button" onclick="clickxyz('5')">5</div>
+            <div class="button" onclick="clickxyz('6')">6</div>
+            <div class="button operator" onclick="clickxyz('*')">*</div>
+
+            <div class="button" onclick="clickxyz('1')">1</div>
+            <div class="button" onclick="clickxyz('2')">2</div>
+            <div class="button" onclick="clickxyz('3')">3</div>
+            <div class="button operator" onclick="clickxyz('-')">-</div>
+
+            <div class="button" onclick="clickxyz('0')">0</div>
+            <div class="button" onclick="clickxyz('.')">.</div>
+            <div class="button" id="equal" onclick="calc()">=</div>
+            <div class="button operator" onclick="clickxyz('+')">+</div>
+        </div>
+   </div>
+
+<script src="CalculatorPro.js"></script>   
+</body>
+</html>
