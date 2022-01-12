@@ -1,0 +1,49 @@
+body
+{
+    background-color: #7d5fff;
+    overflow: hidden;
+}
+
+div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+input, button
+{
+    border: none;
+    background-color: white;
+}
+
+button
+{
+    cursor: pointer;
+}
+
+.fas
+{
+    font-size: x-large;
+    padding: 12px 7px;
+    border: none;
+}
+
+#search
+{
+    width: 0px;    
+    outline: none;
+    font-size: large;
+    padding: 15px 0px;
+    transition: width 0.3s ease, padding 0.3s ease-in;
+}
+#search.active
+{
+    font-size: large;
+    padding: 15px 15px;
+    margin: none;
+    width: 170px;
+    outline: none;
+    transition: width 0.3s ease;
+}

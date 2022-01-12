@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +12,7 @@
         // let a = 'Javascript is fantastic, and is definitely a good programming language to start with. This is good!';
         // console.log(a.indexOf('is', a.indexOf('is')+1));
 
-    
+
 
         // function calculate(a,b,operation)
         // {
@@ -47,7 +48,7 @@
         // };
 
         // fun();
-        
+
 
 
         // var a= prompt("Enter a number")
@@ -60,44 +61,84 @@
         //     {
         //         if(i%3==0 && i%5==0)
         //         {
-        //             arr.push(i);
+        //             arr[j]=i;    // arr.push(i);
         //             j++
-        //         }
-                
+        //         }  
         //     }
         //     return arr;
         // };
         // console.log(fun());
 
 
-        var a= prompt("Enter a number")
-        var arr= [];
-        var j=0;
-        let fun = function ()
-        {
-            var num= Number(a);
-            for(var i=1; i<=num; i++)
-            {
-                if(i%3==0 && i%5==0)
-                {
-                    arr[j]=i;    // arr.push(i);
-                    j++
-                }  
-            }
-            return arr;
-        };
-        console.log(fun());
-        
-    </script>
 
-    
+        // let fun= (a) => a.replace(a[0],a[0].toUpperCase());
+
+        // console.log(fun(prompt("Enter input")));
+
+
+
+        // let myDetails= 
+        // {
+        //     name: 
+        //     {
+        //         firstName: 'Muthyender',
+        //         lastName: 'Neelam'
+        //     },
+        //     isGraduated: true,
+        //     hobbies:['Music', 'Comics'],
+        //     noOfCompaniesApplied: 2,
+        // }
+        // console.log(myDetails)
+
+
+
+        // arr2 = [];
+        // let example =
+        // {
+        //     firstName: "Muthyender",
+        //     lastName: "Neelam",
+        //     arr: [12, 13, 65, 64, 32, 69, 23, 84, 98, 31, 85, 35, 87, 68, 41],
+        //     myMethod: function (arr) {
+        //         for (let i = 0; i < this.arr.length; i++) {
+        //             var count = 0;
+        //             for (let j = 2; j <= Math.sqrt(this.arr[i]); j++) {
+        //                 if (this.arr[i] % j === 0)
+        //                     count++
+        //                 if (count > 1)
+        //                     break
+        //             }
+        //             if (count === 0)
+        //                 arr2.push(this.arr[i]);
+        //         }
+        //         return arr2;
+        //     }
+        // }
+        // console.log(example.myMethod())\
+
+
+
+        // console.log(Math.floor(Math.random() * (7- 4) + 4))
+
+
+        
+        // let arr = [2, 4, 2, 1, 5, 2, 6, 7]
+        // console.log(arr.filter((val, index) => arr.indexOf(val) === arr.lastIndexOf(val)))
+       
+        
+
+        let arr = [2, 6, 3, 1, 4, 9]
+        let arr2 = [0,1]
+        for(let i=2; i<10; i++)
+            arr2[i] = arr2[i-1] + arr2[i-2]
+        let newArr = arr.map((value) => arr2[value])
+        console.log(newArr)
+        
+</script>
+
 </head>
+
 <body>
 
 </body>
+
 </html>
-
-
-
-
-
