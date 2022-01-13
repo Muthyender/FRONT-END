@@ -126,12 +126,30 @@
        
         
 
-        let arr = [2, 6, 3, 1, 4, 9]
-        let arr2 = [0,1]
-        for(let i=2; i<10; i++)
-            arr2[i] = arr2[i-1] + arr2[i-2]
-        let newArr = arr.map((value) => arr2[value])
-        console.log(newArr)
+        // let arr = [2, 6, 3, 1, 4, 9]
+        // let arr2 = [0,1]
+        // for(let i=2; i<10; i++)
+        //     arr2[i] = arr2[i-1] + arr2[i-2]
+        // let newArr = arr.map((value) => arr2[value])
+        // console.log(newArr)
+
+
+        let arr = [5, 4]
+        
+        let isHavingAtleastOnePrime = arr.some((element) => 
+        {
+            let flag = true
+            for(let i=2; i<=element/2; i++)
+            {
+                if(element % i === 0)
+                {
+                    flag = false
+                    break;
+                }
+            }
+            return flag
+        })
+            console.log(isHavingAtleastOnePrime)
         
 </script>
 
