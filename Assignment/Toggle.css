@@ -1,0 +1,90 @@
+body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+input
+{
+    visibility: hidden;
+}
+
+span
+{
+    font-size: large;
+}
+#fast
+{
+    margin: -3px;
+}
+label
+{
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    background-color: rgb(185, 185, 185);
+    border-radius: 30px;
+    padding: 4px;
+    margin: 10px;
+}
+input:checked +.label
+{
+    background-color: purple;
+}
+
+.ball
+{
+    width: 40px;
+    height:40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    animation: slideOff 0.3s linear backwards;
+}
+input:checked +.label .ball 
+{
+    animation: slideOn 0.3s linear forwards;
+}
+
+
+@keyframes slideOn 
+{
+    0%
+    {
+        transform: translate(0) scale(1);
+    }
+    50%
+    {
+        transform: translateX(20px) scale(1.2);
+    }
+    100%
+    {
+        transform: translate(40px) scale(1);
+    }
+}
+
+@keyframes slideOff 
+{
+    0%
+    {
+        transform: translate(40px) scale(1);
+    }
+    50%
+    {
+        transform: translateX(20px) scale(1.2);
+    }
+    100%
+    {
+        transform: translate(0) scale(1);
+    }
+}

@@ -134,23 +134,28 @@
         // console.log(newArr)
 
 
-        let arr = [5, 4]
+        // let arr = [5, 4]
         
-        let isHavingAtleastOnePrime = arr.some((element) => 
-        {
-            let flag = true
-            for(let i=2; i<=element/2; i++)
-            {
-                if(element % i === 0)
-                {
-                    flag = false
-                    break;
-                }
-            }
-            return flag
-        })
-            console.log(isHavingAtleastOnePrime)
-        
+        // let isHavingAtleastOnePrime = arr.some((element) => 
+        // {
+        //     let flag = true
+        //     for(let i=2; i<=element/2; i++)
+        //     {
+        //         if(element % i === 0)
+        //         {
+        //             flag = false
+        //             break;
+        //         }
+        //     }
+        //     return flag
+        // })
+        // console.log(isHavingAtleastOnePrime)
+
+        let arr1= [1,2]
+        let arr2= [3,4,5]
+        let pArr = [...arr1,...arr2]
+        console.log(pArr)
+
 </script>
 
 </head>
