@@ -1,0 +1,65 @@
+body
+{
+    background-color: #2c3347;
+    color: white;
+}
+h1
+{
+    font-family: 'Montserrat';
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-size: 3rem;
+    text-align: center;
+}
+#display
+{
+    text-align: center;
+    border: 2px solid white;
+    height: 400px;
+    border-radius: 100%;
+    width: 400px;
+    margin: auto;
+    display: grid;
+    align-items: center;
+}
+#time
+{
+    font-family: 'Roboto Mono';
+    font-size: 3rem;
+    font-weight: lighter;
+}
+.controls
+{
+    text-align: center;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    align-items: center;
+}
+button
+{
+    background-color: #2c3347;
+    border: none;
+    cursor: pointer;
+    padding: 0px;
+}
+.iconify
+{
+    font-size: 5rem
+}
+
+#reload
+{
+    color: linen;
+}
+#play
+{
+    display: block;
+    color: lime;
+}
+#pause
+{
+    display: none;
+    color: lime;
+}

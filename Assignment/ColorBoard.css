@@ -1,0 +1,31 @@
+body
+{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+#container
+{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box
+{
+    height: 16px;
+    width: 16px;
+    margin: 2px;
+    background-color: rgb(29, 26, 26);
+    transition: 2.5s ease;
+}  
+
+.box:hover
+{
+    transition-duration: 0ms;
+}
