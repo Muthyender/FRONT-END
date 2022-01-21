@@ -170,28 +170,24 @@
 
     
 
-    // let inputArray = [
-    //   {name: 'Amber', batch: 'Batch 12', likesIceCream: false},
-    //   {name: 'Pratik', batch: 'Batch 12', likesIceCream: true},
-    //   {name: 'Charan', batch: 'Batch 11', likesIceCream: false},
-    //   {name: 'Dhanashree', batch: 'Batch 12', likesIceCream: true},
-    //   {name: 'Anirban', batch: 'Batch 10', likesIceCream: false}
-    // ]
+    let inputArr = [
+      {name: 'Amber', batch: 'Batch 12', likesIceCream: false},
+      {name: 'Pratik', batch: 'Batch 12', likesIceCream: true},
+      {name: 'Charan', batch: 'Batch 11', likesIceCream: false},
+      {name: 'Dhanashree', batch: 'Batch 12', likesIceCream: true},
+      {name: 'Anirban', batch: 'Batch 10', likesIceCream: false}
+    ]
     
-    // let studentLikeIcecream = inputArray.filter((student) => student['likesIceCream'])
-    // for(let i=0; i< studentLikeIcecream.length; i++)
-    //     console.log(studentLikeIcecream[i].name)   
+    let outputArr = []
+    let studentLikeIcecream = inputArr.filter((student) => student['likesIceCream'])
+    
+    studentLikeIcecream.forEach(val =>
+    {
+      outputArr.push(val.name)
+    })
+    
+    console.log(outputArr)
 
-    let saurabh =
-    {
-      firstName: 'Saurabh',
-      lastName: 'Rajput'
-    }
-    saurabh.fullName = function ()
-    {
-      console.log(this.firstName + " " + this.lastName)
-    }
-    saurabh.fullName()
 </script>
 
 </head>

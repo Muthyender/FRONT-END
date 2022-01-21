@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    background-color: rgb(43, 154, 228) ;
+    color: white;
+    font-family: 'Montserrat';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1
+{
+    margin-bottom: 0px;
+}
+h3
+{
+    margin: 1rem 0 2.5rem;
+}
+h4
+{
+    text-align: center;
+}
+#cup
+{
+    border: 4px solid rgb(54, 91, 146);
+    height: 300px;
+    width: 150px;
+    border-radius: 0px 0px 2.5rem 2.5rem;
+    background-color: white;
+    color: rgb(54, 91, 146);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.cups
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 240px;
+}
+
+.small
+{
+    height: 100px;
+    width: 50px;
+    border: 4px solid rgb(54, 91, 146);
+    border-radius: 0px 0px 1rem 1rem;
+    margin: 5px;
+    background-color: white;
+    color: rgb(54, 91, 146);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.full
+{
+    background-color: rgb(120, 197, 248);
+    color: white;
+}
+#litres
+{
+    color:rgb(54, 91, 146);
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+#percentage
+{
+    background-color: rgb(120, 197, 248);
+    color:rgb(54, 91, 146);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 0px 0px 35px 35px;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+#remained
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
