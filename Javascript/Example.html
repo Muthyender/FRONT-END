@@ -174,12 +174,13 @@
       {name: 'Amber', batch: 'Batch 12', likesIceCream: false},
       {name: 'Pratik', batch: 'Batch 12', likesIceCream: true},
       {name: 'Charan', batch: 'Batch 11', likesIceCream: false},
-      {name: 'Dhanashree', batch: 'Batch 12', likesIceCream: true},
+      {name: 'Dhanashree', batch: 'Batch 11', likesIceCream: true},
       {name: 'Anirban', batch: 'Batch 10', likesIceCream: false}
     ]
-    
+
+    // console.log(inputArr[0]['likesIceCream'])
     let outputArr = []
-    let studentLikeIcecream = inputArr.filter((student) => student['likesIceCream'])
+    let studentLikeIcecream = inputArr.filter((student) => student.likesIceCream && student['batch'] === 'Batch 11')
     
     studentLikeIcecream.forEach(val =>
     {
@@ -187,6 +188,7 @@
     })
     
     console.log(outputArr)
+
 
 </script>
 
