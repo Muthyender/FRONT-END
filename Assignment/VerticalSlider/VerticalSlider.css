@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open sans';
+    color: white;
+    overflow: hidden;
+}
+.container
+{
+    margin: none;
+    padding: none;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+
+.left-slide
+{
+    width: 35%;
+    height: 100%;
+    position: absolute;
+    transition: transform 0.5s ease-in-out;
+}
+.left-slide div
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1
+{
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+
+.right-slide
+{
+    position: absolute;
+    top: 0;
+    left: 35%;
+    width: 65%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+.right-slide div
+{
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+button
+{
+    font-size: 16px;
+    padding: 15px;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    border: none;
+    cursor: pointer;
+    color: gray;
+}
+button:hover
+{
+    color: black;
+}
+.down-btn
+{
+    position: absolute;
+    transform: translateX(-100%);
+    border-radius: 5px 0 0 5px;
+}
+.up-btn
+{
+    transform: translateY(-100%);
+    border-radius: 0 5px 5px 0;
+}

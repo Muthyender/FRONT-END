@@ -170,26 +170,210 @@
 
     
 
-    let inputArr = [
-      {name: 'Amber', batch: 'Batch 12', likesIceCream: false},
-      {name: 'Pratik', batch: 'Batch 12', likesIceCream: true},
-      {name: 'Charan', batch: 'Batch 11', likesIceCream: false},
-      {name: 'Dhanashree', batch: 'Batch 11', likesIceCream: true},
-      {name: 'Anirban', batch: 'Batch 10', likesIceCream: false}
+    // let inputArr = [
+    //   {name: 'Amber', batch: 'Batch 12', likesIceCream: false},
+    //   {name: 'Pratik', batch: 'Batch 12', likesIceCream: true},
+    //   {name: 'Charan', batch: 'Batch 11', likesIceCream: false},
+    //   {name: 'Dhanashree', batch: 'Batch 11', likesIceCream: true},
+    //   {name: 'Anirban', batch: 'Batch 10', likesIceCream: false}
+    // ]
+
+    // let outputArr = []
+    // let studentLikeIcecream = inputArr.filter((student) => student.likesIceCream && student['batch'] === 'Batch 11')
+    
+    // studentLikeIcecream.forEach(val =>
+    // {
+    //   outputArr.push(val.name)
+    // })
+    
+    // console.log(outputArr)
+
+
+
+    // const executeOrder = function(callback)
+    // {
+    //   console.log('Order placed')
+    //   setTimeout(function ()
+    //   {
+    //     console.log('Order Received!')
+    //     console.log('Chef started preparing')
+    //     setTimeout(function()
+    //     {
+    //       console.log('Pizza sauce added')
+    //       setTimeout(function()
+    //       {
+    //         console.log('First layer of cheese added')
+    //         setTimeout( function()
+    //         {
+    //           console.log('Toppings added')
+    //           setTimeout(function()
+    //           {
+    //             console.log('Final layer of cheese added')
+    //             setTimeout(function()
+    //             {
+    //               console.log('Pizza baked')
+    //               setTimeout(function()
+    //               {
+    //                 console.log('Oregano added and packed')
+    //                 setTimeout(callback, 3000)
+    //               }, 4000)
+    //             }, 8000)
+    //           }, 2000)
+    //         }, 4000)
+    //       }, 3000)
+    //     }, 5000)
+    //   }, 2000)
+    // }
+
+    // executeOrder(function() 
+    // {
+    //   console.log('The order is ready and handed over to Zomato guy')
+    // })
+
+  
+
+    // let bankBalances = [30000, 1000, 50000, 20000, 40000]
+
+    // bankBalances = bankBalances.map(balance =>
+    // {
+    //   if(balance.toString()[0] % 2 === 0)
+    //     return balance + 0.2*balance
+    //   else
+    //     return balance + 0.35*balance
+    // })
+
+    // console.log(bankBalances)
+
+
+
+    // let arr = [2, 3, 5, 6, 0, 1]
+    // arr.forEach(val =>
+    // {
+    //   if(!arr.includes(arr.length-val))
+    //     console.log(arr.length-val)
+    // })
+
+    // let missing = arr.length*(arr.length + 1)/2
+    // arr.forEach(val =>
+    // {
+    //   missing = missing - val
+    // })
+    // console.log(missing)
+
+    
+
+    // let students = [
+    //   {
+    //     name: 'John',
+    //     batch: 'Batch 11',
+    //     marks: {
+    //       english: '38',
+    //       maths: '72',
+    //       science: '82',
+    //       hindi: '21',
+    //       social: '48',
+    //     }
+    //   },
+    //   {
+    //     name: 'Sita',
+    //     batch: 'Batch 12',
+    //     marks: {
+    //       english: '74',
+    //       maths: '82',
+    //       science: '32',
+    //       hindi: '42',
+    //       social: '28',
+    //     }
+    //   },
+    //   {
+    //     name: 'Shyam',
+    //     batch: 'Batch 13',
+    //     marks: {
+    //       english: '28',
+    //       maths: '92',
+    //       science: '63',
+    //       hindi: '81',
+    //       social: '61',
+    //     }
+    //   }
+    // ]
+
+    // let answer = students.map(student =>
+    // {
+    //   let total =0
+    //   for(subject in student.marks)
+    //     total += Number(student.marks[subject])
+    //   return total
+    // })
+
+    // let answer = students.map(student =>
+    // {
+    //   let {english, maths, science, hindi, social} = student.marks
+    //   return Number(english) + Number(maths) + Number(science) + Number(hindi) + Number(social)
+    // })
+
+    // console.log(answer)
+
+
+
+    let students = [
+      {
+        name: 'John',
+        batch: 'Batch 11',
+        marks: {
+          english: '38',
+          maths: '72',
+          science: '82',
+          hindi: '21',
+          social: '48',
+        }
+      },
+      {
+        name: 'Sita',
+        batch: 'Batch 12',
+        marks: {
+          english: '74',
+          maths: '82',
+          science: '32',
+          hindi: '42',
+          social: '28',
+        }
+      },
+      {
+        name: 'Shyam',
+        batch: 'Batch 13',
+        marks: {
+          english: '28',
+          maths: '92',
+          science: '63',
+          hindi: '81',
+          social: '61',
+        }
+      }, 
+      {
+        name: 'Lakshman',
+        batch: 'Batch 14',
+        marks: {
+          english: '48',
+          maths: '83',
+          science: '63',
+          hindi: '71',
+          social: '63',
+        }
+      }
     ]
 
-    // console.log(inputArr[0]['likesIceCream'])
-    let outputArr = []
-    let studentLikeIcecream = inputArr.filter((student) => student.likesIceCream && student['batch'] === 'Batch 11')
-    
-    studentLikeIcecream.forEach(val =>
+
+    students.forEach(student =>
     {
-      outputArr.push(val.name)
+      for(subject in student.marks)
+      {
+        if(student.marks[subject] < 30)
+          console.log(student.name)
+      }
     })
-    
-    console.log(outputArr)
 
-
+    // console.log(x)
 </script>
 
 </head>
