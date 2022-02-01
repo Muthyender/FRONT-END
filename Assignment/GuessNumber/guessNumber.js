@@ -35,9 +35,6 @@ submitBtn.addEventListener('click', (e) => {
         lowHigh.innerText = 'Too Low! Try a smaller number'
     }
     
-    console.log(randNum)
-    console.log(inputValue)
-    
     if(guessRemain < 0)
     {
         lowHigh.innerText = `Game Over! Number was ${randNum}`

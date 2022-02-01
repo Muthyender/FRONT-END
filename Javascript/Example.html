@@ -316,70 +316,128 @@
 
 
 
-    let students = [
-      {
-        name: 'John',
-        batch: 'Batch 11',
-        marks: {
-          english: '38',
-          maths: '72',
-          science: '82',
-          hindi: '21',
-          social: '48',
-        }
-      },
-      {
-        name: 'Sita',
-        batch: 'Batch 12',
-        marks: {
-          english: '74',
-          maths: '82',
-          science: '32',
-          hindi: '42',
-          social: '28',
-        }
-      },
-      {
-        name: 'Shyam',
-        batch: 'Batch 13',
-        marks: {
-          english: '28',
-          maths: '92',
-          science: '63',
-          hindi: '81',
-          social: '61',
-        }
-      }, 
-      {
-        name: 'Lakshman',
-        batch: 'Batch 14',
-        marks: {
-          english: '48',
-          maths: '83',
-          science: '63',
-          hindi: '71',
-          social: '63',
-        }
-      }
-    ]
+    // let students = [
+    //   {
+    //     name: 'John',
+    //     batch: 'Batch 11',
+    //     marks: {
+    //       english: '38',
+    //       maths: '72',
+    //       science: '82',
+    //       hindi: '21',
+    //       social: '48',
+    //     }
+    //   },
+    //   {
+    //     name: 'Sita',
+    //     batch: 'Batch 12',
+    //     marks: {
+    //       english: '74',
+    //       maths: '82',
+    //       science: '32',
+    //       hindi: '42',
+    //       social: '28',
+    //     }
+    //   },
+    //   {
+    //     name: 'Shyam',
+    //     batch: 'Batch 13',
+    //     marks: {
+    //       english: '28',
+    //       maths: '92',
+    //       science: '63',
+    //       hindi: '81',
+    //       social: '61',
+    //     }
+    //   }, 
+    //   {
+    //     name: 'Lakshman',
+    //     batch: 'Batch 14',
+    //     marks: {
+    //       english: '48',
+    //       maths: '83',
+    //       science: '63',
+    //       hindi: '71',
+    //       social: '63',
+    //     }
+    //   }
+    // ]
 
+    // let step1 = students.map(student =>
+    // {
+    //   let {english, maths, science, hindi, social} = student.marks
+    //   if(Number(english) > 30 && Number(maths) > 30 && Number(science) > 30 && Number(hindi) > 30 && Number(social) > 30)
+    //     return student.name
+    // })
 
-    students.forEach(student =>
+    // let passed = step1.filter(student => student)
+    // console.log(passed)
+
+    // let answer = []
+    // students.forEach(student =>
+    // {
+    //   let marks = Object.values(student.marks)
+    //   if(marks.every(singleSubjectMarks => singleSubjectMarks > 30))
+    //     answer.push(student.name) 
+    // })
+
+    // console.log(answer)
+
+    async function abc()
     {
-      for(subject in student.marks)
+      setTimeout( function()
       {
-        if(student.marks[subject] < 30)
-          console.log(student.name)
-      }
-    })
+        return 'Resolved after 3 secs'
+      }, 3000)
+    }
 
-    // console.log(x)
+    async function display()
+    {
+      return await abc()
+    }
+
+    console.log(display())
 </script>
 
 </head>
 
 <body>
 
+  <form>
+    <input type="text" placeholder="Enter email address" id="input">
+    <input type="submit" value = 'Submit' id="submitBtn">
+  </form>
+
+  <!-- <script>
+    let input = document.getElementById('input')
+    let btn = document.getElementById('submitBtn')
+
+    btn.addEventListener('click', () =>
+    {
+      if(!input.value)
+       alert('Please enter an email address')
+      else
+      {
+        if(!input.value.includes('@'))
+          alert(`Please include '@' in your email`)
+        if(!input.value.includes('.'))
+          alert(`Please include '.' in your email`)
+        else if(input.value[input.value.length - 1] === '@')
+          alert(`Please enter a part following '@'`)
+        else if(input.value[input.value.length - 1] === '.')
+          alert(`Please enter a part following '.'`)
+        else if(!(input.value.charCodeAt(0) >= 97) || !(input.value.charCodeAt(0) <= 122))
+          alert('Email cannot start with a special character')
+        else if(input.value[0] > 0 || input.value[0] < 9) 
+          alert('Email cannot start with a number')
+        else if(input.value[input.value.length - 2] === '.' || input.value[input.value.length - 2] === '@' || input.value.includes('#') || input.value.includes('..') || input.value.includes('.@') || input.value.includes('@.'))
+          alert(`Please enter a valid email id`)
+      }
+    })
+    
+    
+  </script> -->
+  
 </body>
 
 </html>
