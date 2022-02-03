@@ -383,20 +383,23 @@
 
     // console.log(answer)
 
-    async function abc()
-    {
-      setTimeout( function()
-      {
-        return 'Resolved after 3 secs'
-      }, 3000)
-    }
 
-    async function display()
-    {
-      return await abc()
-    }
 
-    console.log(display())
+    // async function abc()
+    // {
+    //   setTimeout( function()
+    //   {
+    //     return 'Resolved after 3 secs'
+    //   }, 3000)
+    // }
+
+    // async function display()
+    // {
+    //   let x = await abc()
+    //   return x
+    // }
+
+    // console.log(display())
 </script>
 
 </head>
@@ -408,7 +411,7 @@
     <input type="submit" value = 'Submit' id="submitBtn">
   </form>
 
-  <!-- <script>
+  <script>
     let input = document.getElementById('input')
     let btn = document.getElementById('submitBtn')
 
@@ -418,8 +421,10 @@
        alert('Please enter an email address')
       else
       {
-        if(!input.value.includes('@'))
+        if(input.value.indexOf('@') === -1)
           alert(`Please include '@' in your email`)
+        else if(input.value.indexOf(' ') !== 1)
+          alert('Email cannot contain spaces')
         if(!input.value.includes('.'))
           alert(`Please include '.' in your email`)
         else if(input.value[input.value.length - 1] === '@')
@@ -436,7 +441,7 @@
     })
     
     
-  </script> -->
+  </script>
   
 </body>
 
