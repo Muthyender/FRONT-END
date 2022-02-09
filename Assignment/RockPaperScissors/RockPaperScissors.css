@@ -1,0 +1,24 @@
+body
+{
+    overflow: hidden;
+}
+h1
+{
+    font-size: 2.5rem;
+}
+
+.boards, .select
+{
+    display: none;
+}
+
+#playerSide, #computerSide
+{
+    height: 250px;
+}
+
+.select .fas
+{
+    cursor: pointer;
+}
+

@@ -44,7 +44,11 @@ button:active, button:focus
     outline:none;
     border: 2px solid #e15e32;
 }
-
+#again
+{
+    display: none;
+    margin: 2rem auto;
+}
 
 .game
 {

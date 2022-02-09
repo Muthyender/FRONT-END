@@ -42,7 +42,6 @@ function startGame()
                     div.innerText = activePlayer === 0 ? 'x' : 'o'
                     const winner = checkWinner()
 
-                    console.log(winner)
                     if(!winner)
                     {
                         updateActivePlayer()
@@ -51,6 +50,7 @@ function startGame()
                     else
                     {
                         winnerMsg(`${activePlayer === 0 ? player1 : player2}, congratulations you Won!`)
+                        reset()
                     } 
                 }
             })            
@@ -100,12 +100,9 @@ function checkWinner()
         let cell2 = document.getElementById(winningCombo[1]+1)
         let cell3 = document.getElementById(winningCombo[2]+1)
 
-        console.log(cell1)
         let val1 = cell1.innerText
         let val2 = cell2.innerText
         let val3 = cell3.innerText
-
-        console.log(val1, val2, val3)
 
         if(val1 === val2 && val2 === val3 && val1 != '')
         {
@@ -119,4 +116,12 @@ function checkWinner()
         }
     }
     return winnerBool
+}
+
+function reset()
+{
+    let again = document.getElementById('again')
+    again.style.display = 'block'
+
+    again.addEventListener('click', () => location.reload())
 }
