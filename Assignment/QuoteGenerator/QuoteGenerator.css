@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;0,900;1,300;1,700&display=swap");
+body
+{
+    background-image: url(background.jpeg);
+    color: white;
+    font-family: 'Merriweather';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container
+{
+    background-color: rgba(0,0,0,0.5);
+    padding: 1.5rem 2rem;
+    text-align: center;
+    border-radius: 20px;
+    max-width: 900px;
+}
+
+#quote
+{
+    font-size: 2.2rem;
+    font-weight: bold;
+    line-height: 1.8;
+}
+
+#author
+{
+    font-size: 2rem;
+    margin: 10px;
+}
+
+#btn
+{
+    background-color: rgba(0,0,0, 0.8);
+    color: white;
+    font-family: inherit;
+    padding: 10px 25px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+#loader
+{
+    border: 1rem solid white;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border-top-color: black;
+    animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin
+{
+    0% 
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 576px)
+{
+    #quote
+    {
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 1.7;
+    }
+}

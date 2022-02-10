@@ -1,0 +1,63 @@
+body
+{
+    background-color: rgb(29, 11, 80);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#container
+{
+    background-color: rgb(250, 223, 73);
+    padding: 1rem;
+    width: 700px;
+    max-width: 90%;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#quote
+{
+    margin: 0 1rem 1rem 1rem;
+}
+
+#input
+{
+    border: 1px solid black;
+    height: 120px;
+    width: 100%;
+    background-color: rgb(250, 223, 73);
+    resize: none;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 10px;
+}
+#input:focus
+{
+    border: 2px solid black;
+}
+
+#timer
+{
+    position: absolute;
+    top: 1rem;
+    color: rgb(250, 223, 73);
+    font-size: 3rem;
+}
+
+.correct
+{
+    color: green;
+    text-decoration: underline;
+}
+
+.wrong
+{
+    color: red;
+    text-decoration: underline;
+}
