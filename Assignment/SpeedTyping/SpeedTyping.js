@@ -7,7 +7,7 @@ let time = 0
 let random
 
 async function getQuotes() {
-    let apiURL = "http://api.quotable.io/random"
+    let apiURL = "https://api.quotable.io/random"
 
     let response = await fetch(apiURL)
     apiQuotes = await response.json()
