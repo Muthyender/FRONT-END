@@ -1,0 +1,68 @@
+body
+{
+    text-align: center;
+    margin: auto;
+}
+
+i
+{
+    color: #286ace;
+}
+
+span
+{
+    color: #286ace;
+}
+
+.row
+{
+    border-top: 2px solid #dee2e6;
+    border-bottom: 2px solid #dee2e6;
+    padding: 10px 0 10px ;
+}
+.row.items
+{
+    border-bottom: none;
+}
+
+#btn
+{
+    background-color: #286ace;
+    color: white;
+}
+
+#title, #author, #isbn
+{
+    border: 2px solid lightgray;
+    line-height: 2;
+    outline: none;
+}
+#title:focus, #author:focus, #isbn:focus, #title:active
+{
+    border-color: #286ace9d;
+    box-shadow: 0 0 2px 2px #286ace7a;
+    background-color: white;
+}
+
+.alert.fs-6
+{
+    padding: 10px;
+}
+
+.btn.btn-danger
+{
+    padding: 0px 8px 3px;
+}
+
+.col, .col-1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-wrap: break-word;
+}
+
+div.items:nth-of-type(even)
+{
+    background-color: #dee2e68a;
+}

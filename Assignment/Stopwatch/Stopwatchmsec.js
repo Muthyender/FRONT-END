@@ -7,7 +7,8 @@ let startTime;
 let elapsedTime = 0;
 let stopWatchInterval;
 
-function timeToString(element) {
+function timeToString(element) 
+{
     let diffInHrs = element / 3600000
     let hr = Math.floor(diffInHrs)
 
@@ -30,9 +31,11 @@ function timeToString(element) {
 
 
 playBtn.addEventListener('click', startClock)
-function startClock() {
+function startClock() 
+{
     startTime = Date.now() - elapsedTime
-    stopWatchInterval = setInterval(function printTime() {
+    stopWatchInterval = setInterval(function printTime() 
+    {
         elapsedTime = Date.now() - startTime
         timeToString(elapsedTime)
     }, 1);
@@ -41,14 +44,16 @@ function startClock() {
 
 
 pauseBtn.addEventListener('click', stopClock)
-function stopClock() {
+function stopClock() 
+{
     clearInterval(stopWatchInterval)
     showBtn('PLAY')
 }
 
 
 resetBtn.addEventListener('click', resetClock)
-function resetClock() {
+function resetClock() 
+{
     clearInterval(stopWatchInterval)
     time.innerText = `00:00:00:000`
     elapsedTime = 0
@@ -56,12 +61,15 @@ function resetClock() {
 }
 
 
-function showBtn(element) {
-    if (element === 'PLAY') {
+function showBtn(element) 
+{
+    if (element === 'PLAY') 
+    {
         playBtn.style.display = 'block'
         pauseBtn.style.display = 'none'
     }
-    else {
+    else 
+    {
         playBtn.style.display = 'none'
         pauseBtn.style.display = 'block'
     }

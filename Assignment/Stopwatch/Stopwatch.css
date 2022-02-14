@@ -49,17 +49,11 @@ button
     font-size: 5rem
 }
 
-#reload
-{
-    color: linen;
-}
 #play
 {
     display: block;
-    color: lime;
 }
 #pause
 {
     display: none;
-    color: lime;
 }
