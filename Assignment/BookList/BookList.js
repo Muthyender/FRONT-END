@@ -1,3 +1,4 @@
+let form = document.querySelector('form')
 let title = document.getElementById('title')
 let author = document.getElementById('author')
 let isbn = document.getElementById('isbn')
@@ -7,8 +8,9 @@ let msg = document.getElementById('message')
 
 let list = document.getElementById('list')
 
-btn.addEventListener('click', () =>
+form.addEventListener('submit', (e) =>
 {
+    e.preventDefault()
     let titleVal = title.value
     let authorVal = author.value
     let isbnVal = isbn.value

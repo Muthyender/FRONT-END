@@ -1,0 +1,52 @@
+.container
+{
+    width: 800px;
+}
+
+.input-container
+{
+    background-color: #e5e5e5;
+    padding: 3rem;
+    border-radius: 10px;
+    margin-bottom: 4rem;
+}
+
+hr
+{
+    margin-bottom: 2rem;
+}
+
+.inp
+{
+    width: 95%;
+    border: 2px solid lightgray;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.inp:focus
+{
+    border: 1px solid #0d6dfd8a;
+    box-shadow: 0 0 2px 2px #0d6dfd42;
+}
+
+.listItems
+{
+    background-color: #e5e5e5;
+    padding: 1.5rem;
+    border-radius: 10px;
+    color: #1563d6;
+    font-size: large;
+}
+
+.btn-outline-dark, .btn-danger
+{
+    margin: 1rem;
+}
+
+.btn-outline-dark
+{
+    background-color: white;
+    border: none;
+}
