@@ -25,7 +25,6 @@ window.addEventListener('load', () =>
             {
                 lat = position.coords.latitude
                 long = position.coords.longitude
-                console.log(lat,long)
 
                 let apiURL = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=0b4b9b21b99187c49fe7a4d8828119c1`
                 try
@@ -34,7 +33,6 @@ window.addEventListener('load', () =>
                     .then(response => response.json())
                     .then(requiredData => 
                         {
-                            console.log(requiredData)
                             setDetails(requiredData)
                         })
                 }  
@@ -51,7 +49,6 @@ window.addEventListener('load', () =>
 form.addEventListener('submit', (e) =>
 {
     e.preventDefault()
-    // console.log(val)
     
     let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${userInput.value}&APPID=0b4b9b21b99187c49fe7a4d8828119c1`
     try
@@ -79,11 +76,9 @@ function setDetails(requiredData)
     let apiTime = requiredData.timezone
     let offsetTime  = apiTime/3600
 
-    console.log(offsetTime)
     let a = new Date()
     
     let offsetMin = offsetTime - Math.floor(offsetTime)
-    console.log(offsetMin)
 
     let min = a.getUTCMinutes() + offsetMin*60
     let hr
@@ -96,7 +91,6 @@ function setDetails(requiredData)
     {
         hr = Math.floor(a.getUTCHours() + offsetTime)
     }
-    console.log(hr)
     minutes.innerText = min.toString().padStart(2, '0')
 
     if(hr > 12 && hr < 24)
@@ -117,16 +111,12 @@ function setDetails(requiredData)
         hours.innerText = (hr % 12).toString().padStart(2, '0')
 
     }
-    console.log(hr)
-    console.log(min)
 
     let iconURL = `https://openweathermap.org/img/wn/${requiredData.weather[0].icon}@2x.png`
     icon.src = iconURL
 
     temperature.innerText = (requiredData.main.temp - 273.15).toFixed(2)
     temperatureUnit.innerText = 'C'
-
-    console.log((requiredData.main.temp - 273.15)* 9/5 + 32)
 
     temperatureContainer.addEventListener('click', () =>
     {
@@ -150,19 +140,16 @@ function setDetails(requiredData)
     {
         if(hours.innerText >= 12 && hours.innerText < 4)
         {
-            console.log('day')
             document.body.style.backgroundImage = 'url(day.jpeg)'
         }
             
         else if(hr > 4 && hr < 8)
         {
-            console.log('evening')
             document.body.style.backgroundImage = 'url(evening.jpg)'
 
         }
         else
         {
-            console.log('night1')
             document.body.style.backgroundImage = 'url(night.jpeg)'
         }
 
@@ -172,11 +159,9 @@ function setDetails(requiredData)
         if((hr > 0 && hr < 6) || hr === 12)
         {
             document.body.style.backgroundImage = 'url(night.jpeg)'
-            console.log('night2')
         }
         else
         {
-            console.log('morning')
             document.body.style.backgroundImage = 'url(morning.jpeg)'
         }
     }
