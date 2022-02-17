@@ -53,7 +53,7 @@ form.addEventListener('submit', (e) =>
     e.preventDefault()
     // console.log(val)
     
-    let apiURL = `http://api.openweathermap.org/data/2.5/weather?q=${userInput.value}&APPID=0b4b9b21b99187c49fe7a4d8828119c1`
+    let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${userInput.value}&APPID=0b4b9b21b99187c49fe7a4d8828119c1`
     try
     {
         fetch(apiURL)
@@ -120,7 +120,7 @@ function setDetails(requiredData)
     console.log(hr)
     console.log(min)
 
-    let iconURL = `http://openweathermap.org/img/wn/${requiredData.weather[0].icon}@2x.png`
+    let iconURL = `https://openweathermap.org/img/wn/${requiredData.weather[0].icon}@2x.png`
     icon.src = iconURL
 
     temperature.innerText = (requiredData.main.temp - 273.15).toFixed(2)
