@@ -50,27 +50,29 @@ form.addEventListener('submit', (e) =>
 {
     e.preventDefault()
     
-    let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${userInput.value}&APPID=0b4b9b21b99187c49fe7a4d8828119c1`
-    try
+    async function getData()
     {
-        fetch(apiURL)
-        .then(response => response.json())
-        .then(requiredData => 
-            {
-                if(requiredData.name)
-                    setDetails(requiredData)
-            })
+        let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${userInput.value}&APPID=0b4b9b21b99187c49fe7a4d8828119c1`
+
+        try
+        {
+            let response = await fetch(apiURL)
+            let requiredData = await response.json()
+            setDetails(requiredData)
+        }
+        catch(requiredData)
+        {
+            window.alert(`Weather report not available for the place entered`)
+        }
     }
-    catch
-    {
-        window.alert(`Weather report not available for ${userInput.value}`)
-    }
+    getData()
     userInput.value = ''
 })
 
 function setDetails(requiredData)
 {
-    cityName.innerText = requiredData.name
+    if(requiredData.name)
+        cityName.innerText = requiredData.name
     countryName.innerText = requiredData.sys.country
 
     let apiTime = requiredData.timezone
@@ -82,6 +84,7 @@ function setDetails(requiredData)
 
     let min = a.getUTCMinutes() + offsetMin*60
     let hr
+
     if(min > 60)
     {
         min = min-60
@@ -93,7 +96,7 @@ function setDetails(requiredData)
     }
     minutes.innerText = min.toString().padStart(2, '0')
 
-    if(hr > 12 && hr < 24)
+    if(hr >= 12 && hr < 24)
     {
         amOrPm.innerText = 'PM'
     }
@@ -101,6 +104,7 @@ function setDetails(requiredData)
     {
         amOrPm.innerText = 'AM'
     }
+
     if(hr === 12 || hr === 24)
     {
         hr = 12
@@ -109,7 +113,6 @@ function setDetails(requiredData)
     else
     {
         hours.innerText = (hr % 12).toString().padStart(2, '0')
-
     }
 
     let iconURL = `https://openweathermap.org/img/wn/${requiredData.weather[0].icon}@2x.png`
@@ -138,32 +141,20 @@ function setDetails(requiredData)
 
     if(amOrPm.innerText === 'PM')
     {
-        if(hours.innerText >= 12 && hours.innerText < 4)
-        {
-            document.body.style.backgroundImage = 'url(day.jpeg)'
-        }
-            
-        else if(hr > 4 && hr < 8)
-        {
+        if((hours.innerText > 0 && hours.innerText < 4) || hours.innerText == 12)
+            document.body.style.backgroundImage = 'url(day.jpg)' 
+        else if(hours.innerText > 4 && hours.innerText < 8)
             document.body.style.backgroundImage = 'url(evening.jpg)'
-
-        }
         else
-        {
             document.body.style.backgroundImage = 'url(night.jpeg)'
-        }
 
     }
     else
     {
-        if((hr > 0 && hr < 6) || hr === 12)
-        {
+        if((hours.innerText > 0 && hours.innerText < 6) || hours.innerText == 12)
             document.body.style.backgroundImage = 'url(night.jpeg)'
-        }
         else
-        {
             document.body.style.backgroundImage = 'url(morning.jpeg)'
-        }
     }
 }
 
