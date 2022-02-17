@@ -1,0 +1,79 @@
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    background-image: url(night.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.weather-container
+{
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+h1
+{
+    margin: 0 3rem 1rem;
+}
+
+input
+{
+    margin: 1rem;
+    margin-right: 0;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+i
+{
+    padding: 13px 10px;
+}
+
+#btn
+{
+    border: none;
+    border-radius: 100%;
+    margin: 0 1rem 0 0;
+}
+
+.temperature-container
+{
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#temperature, #temperature-unit
+{
+    font-size: 3.5rem;
+    color:rgb(127, 255, 185);
+}
+
+sup
+{
+    font-size: 2rem;
+    color:rgb(127, 255, 185);
+}
+
+#description
+{
+    text-transform: capitalize;
+}
+
+.time
+{
+    font-size: x-large;
+}
