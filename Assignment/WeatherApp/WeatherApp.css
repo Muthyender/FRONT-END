@@ -6,7 +6,7 @@ body
     height: 100vh;
     overflow: hidden;
     text-align: center;
-    background-image: url(night.jpeg);
+    background-image: url(default.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -15,7 +15,7 @@ body
 
 .weather-container
 {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 2rem;
     border-radius: 1rem;
 }
@@ -49,7 +49,6 @@ i
 
 .temperature-container
 {
-    margin: 10px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,4 +75,9 @@ sup
 .time
 {
     font-size: x-large;
+}
+
+#icon
+{
+    margin-left: -20px;
 }
