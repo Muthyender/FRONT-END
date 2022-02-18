@@ -86,6 +86,7 @@ function setDetails(requiredData)
 //Setting Weather Icons
     let iconURL = `https://openweathermap.org/img/wn/${requiredData.weather[0].icon}@2x.png`
     icon.src = iconURL
+    icon.style.display = 'block'
 
     setTemperature(requiredData)
 //Setting Description
