@@ -87,11 +87,14 @@ sup
     .weather-container
     {
         width: 90vw;
-        /* height: 60vh; */
     }
     input
     {
-        margin: 1rem 0;
+        margin: 10px 0;
+    }
+    form
+    {
+        margin-bottom: 1rem;
     }
     #btn
     {
