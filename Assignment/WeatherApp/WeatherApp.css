@@ -81,3 +81,12 @@ sup
 {
     margin-left: -20px;
 }
+
+@media screen and (max-width:540px) 
+{
+    .weather-container
+    {
+        width: 90vw;
+        /* height: 60vh; */
+    }
+}
