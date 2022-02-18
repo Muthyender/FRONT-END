@@ -110,10 +110,15 @@ sup
         font-size: 2.5rem;
         color:rgb(127, 255, 185);
     }
-
     sup
     {
         font-size: 1rem;
         color:rgb(127, 255, 185);
+    }
+    #icon
+    {
+        margin-left: -10px;
+        width:70px;
+        height: 70px;
     }
 }
