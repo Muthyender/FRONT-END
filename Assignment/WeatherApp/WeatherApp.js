@@ -102,7 +102,6 @@ function setTime(requiredData)
     let apiTime = requiredData.timezone
     let offsetTime  = apiTime/3600
 
-    console.log(apiTime)
     let date = new Date()
     
     let offsetMin = offsetTime - Math.floor(offsetTime)
@@ -110,7 +109,6 @@ function setTime(requiredData)
     let min = date.getUTCMinutes() + offsetMin*60
     let hr
 
-    console.log(min,hr)
 //Setting time based on whether offset sseconds are postive or negative
     if(apiTime < 0)
     {
@@ -179,13 +177,11 @@ function setTemperature(requiredData)
         {
             temperature.innerText = (temperature.innerText* 9/5 + 32).toFixed(2)
             temperatureUnit.innerText = 'F'
-            console.log(temperature.innerText,1)
         }
         else
         {
             temperature.innerText = ((temperature.innerText - 32) * 5/9).toFixed(2)
             temperatureUnit.innerText = 'C'
-            console.log(temperature.innerText,2)
         }
         
     })
