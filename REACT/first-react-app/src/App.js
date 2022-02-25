@@ -8,6 +8,7 @@ function App() {
     <div className="App">
       <Component1 />
       <Component2 />
+      <Component1 />
     </div>
   );
 }

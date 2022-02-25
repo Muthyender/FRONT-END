@@ -1,7 +1,14 @@
 <html>
 
 <head>Tables and Forms</head>
-
+<style>
+    table, td, th
+    {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+    }
+</style>
 <body>
     <table>
         <tr>
@@ -30,6 +37,7 @@
         </tr>
 
     </table>
+    <br>
     <table>
         <tr>
             <th>Name</th>
@@ -68,14 +76,19 @@
         <label>Number:</label>
         <input type="Number" placeholder="Enter your number" name="number"><br><br>
         <label>Email:</label>
-        <input type="email" placeholder="Enter your email" name="email"><br><br>
+        <input type="email" placeholder="Enter your email" name="email" multiple:'true'><br><br>
         <label>Color:</label>
         <input type="color"><br><br>
         <label>File:</label>
         <input type="file"><br><br>
         <label>Image:</label>
-        <input type="image">
-        <input type="button" and value="Click to submit"><br>
+        <input type="image"><br><br>
+        <label for="range">Range:</label>
+        <input type="range" name="range" id="range" min="0" max="10" step="2"><br><br>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <label for="tel">Tel:</label>
+        <input type="tel" id="tel" pattern="[91]{2}[0-9]{10"><br><br>
+        <input type="button" value="Click to submit"><br><br>
         <button>Click to submit</button>
     </form>
 

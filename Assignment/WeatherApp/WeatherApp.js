@@ -26,7 +26,7 @@ window.addEventListener('load', () =>
                 lat = position.coords.latitude
                 long = position.coords.longitude
                 //Fetching URL based on gps
-                let apiURL = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=0b4b9b21b99187c49fe7a4d8828119c1`
+                let apiURL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=0b4b9b21b99187c49fe7a4d8828119c1`
                 try
                 {
                     fetch(apiURL)
