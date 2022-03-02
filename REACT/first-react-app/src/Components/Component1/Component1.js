@@ -13,6 +13,9 @@ function Component1()
     );
 }
 
+
+//Arrow Function representation
+
 // const Component1 = () =>
 // {
 //     return(

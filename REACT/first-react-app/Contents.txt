@@ -1,0 +1,17 @@
+Components
+    Component nesting - (Component1.js, Component2.js)
+    Component re-using - (App.js)
+
+Fragments (<> ,</>) - (Component2.js)
+
+export default:
+    syntax - export default Component_name
+    example - export default Component1
+
+Component import: 
+    syntax - import Component_name from 'path_of_filenameOfComponent'
+    example - import DevDescription from './Component1/ChildComponent/DevDescription
+
+Style import:
+    syntax - import css_filename
+    example - import './Component1.css
