@@ -37,7 +37,7 @@ function Products()
                                         <Card.Text>
                                             {product.description}
                                         </Card.Text>
-                                        <Button variant="primary">Buy</Button>
+                                        <Button variant="primary">BUY</Button>
                                     </Card.Body>
                                 </Card>
                             </Col>
