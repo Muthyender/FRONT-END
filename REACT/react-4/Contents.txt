@@ -1,0 +1,9 @@
+Hooks:
+    useState() - (App.js)
+    useEffect() - (App.js, TableComponent.js)
+
+Lifting the State up - (Increment.js, App.js)
+
+Props Drilling - (Increment.js, App.js)
+
+Form: Controlled Component - {Login.js}

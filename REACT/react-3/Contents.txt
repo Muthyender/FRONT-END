@@ -1,0 +1,5 @@
+React Bootstrap - (NavbarComp.js, Products.js, Products2.js)
+
+ComponentDidMount() - (Products2.js) 
+ComponentDidUpdate() - (Products2.js)
+ComponentWillUnmount() - (Products2.js)

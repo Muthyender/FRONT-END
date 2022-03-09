@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react'
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import TableComponent from './Components/TableComponent'
+import IncrementButton from './Components/IncrementButton';
+import Login from './Components/Login';
 import {Container, Button, ProgressBar} from 'react-bootstrap'
 
 function App() 
@@ -43,11 +45,13 @@ function App()
         <h1>{count}</h1>
         <ProgressBar now={count} className='m-3'/>
         
-        <Button variant='success' onClick={() => setCount(count+1)}>
-          Increment
-        </Button>
+        <IncrementButton count={count} setCount={setCount} />
+
+        <Login />
       </Container>
   );
 }
 
 export default App;
+
+//Here count state is required by both IncrementButton Component and also ProgressBar Component, so instead of creating count and setCount in IncrementButton Component we do it in the common parent of IncrementButton and ProgressBar i.e., App.js so that the state can be passed as props to both components and used/accessed simultaneously if required.
