@@ -1,0 +1,7 @@
+Axios:
+    axios.get() - (Posts.js, Post.js)
+
+react-router-dom - (App.js, Navbar.js)
+
+Params - (App.js)
+useParams() hook - (Post.js)

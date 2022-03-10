@@ -6,7 +6,7 @@ function Posts()
 {
     const [posts, setPosts] = useState([])
 
-    useEffect(async () =>
+    useEffect(() =>
     {
         //(API using Promise)
         // axios.get('https://jsonplaceholder.typicode.com/posts')
@@ -14,19 +14,26 @@ function Posts()
         // .catch(err => console.log(err))
 
         //(API using Async and Await)
-        try
+        const fetchPosts = async() =>
         {
-            const response =  await axios.get('https://jsonplaceholder.typicode.com/posts')
-            setPosts(response.data)
+            try
+            {
+                const response =  await axios.get('https://jsonplaceholder.typicode.com/posts')
+                setPosts(response.data)
+            }
+            catch(err)
+            {
+                console.log(err)
+            }
         }
-        catch(err)
-        {
-            console.log(err)
-        }
+        
+        fetchPosts()
+
     }, [])
 
     return(
         <>
+            <h1 className='text-center'>Posts</h1>
             {!posts.length ? (<Spinner animation="border"/>) :
                 (posts.map(post =>
                     (
