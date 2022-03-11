@@ -1,13 +1,13 @@
 import React from 'react'
 import {Navbar, Nav, NavDropdown, Container} from 'react-bootstrap'
-import {Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 import './Navbar.css'
 
 function NavbarComponent() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand as={NavLink} to='/'>
           Social Media Site
         </Navbar.Brand>
 
@@ -16,16 +16,12 @@ function NavbarComponent() {
         <Navbar.Collapse id="responsive-navbar-nav">
 
           <Nav className="me-auto">
-            <Nav.Link>
-              <Link className='router-link' to='/' >
+            <Nav.Link as={NavLink} to='/'>
                 Home
-              </Link>
             </Nav.Link>
             
-            <Nav.Link>
-              <Link to='/Posts' className='router-link'>
+            <Nav.Link as={NavLink} to='/Posts'>
                 Posts
-              </Link>
             </Nav.Link>
 
             <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
@@ -52,16 +48,12 @@ function NavbarComponent() {
           </Nav>
 
           <Nav>
-            <Nav.Link>
-              <Link className='router-link' to='/signup' >
+            <Nav.Link as={NavLink} to='/signup'>
                 Sign Up
-              </Link>
             </Nav.Link>
 
-            <Nav.Link>
-              <Link className='router-link' to='/login' >
+            <Nav.Link as={NavLink} to='/login'>
                 Login
-              </Link>
             </Nav.Link>
           </Nav>
 
