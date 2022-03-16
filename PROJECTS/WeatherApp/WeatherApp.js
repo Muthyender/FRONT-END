@@ -13,7 +13,7 @@ let description = document.getElementById('description')
 let humidity = document.getElementById('humidity')
 let wind = document.getElementById('wind')
 
-let temperatureContainer = document.querySelector('.temperature-container')
+let temperatureContainer = document.querySelector('.temp')
 //Getting the location
 window.addEventListener('load', () =>
 {
@@ -88,7 +88,7 @@ function setDetails(requiredData)
     icon.src = iconURL
     icon.style.display = 'block'
 
-    setTemperature(requiredData)
+    setTemperature(requiredData.main.temp)
 //Setting Description
     description.innerText = requiredData.weather[0].description
     humidity.innerText = requiredData.main.humidity + '%'
@@ -166,16 +166,16 @@ function setTime(requiredData)
     }
 }
 //Function for setting Temperature
-function setTemperature(requiredData)
+function setTemperature(temp)
 {
-    temperature.innerText = (requiredData.main.temp - 273.15).toFixed(2)
+    temperature.innerText = (temp - 273.15).toFixed(2)
     temperatureUnit.innerText = 'C'
     //Click event for toggling between C or F
     temperatureContainer.addEventListener('click', () =>
     {
         if(temperatureUnit.innerText === 'C')
         {
-            temperature.innerText = (temperature.innerText* 9/5 + 32).toFixed(2)
+            temperature.innerText = (temperature.innerText * 9/5 + 32).toFixed(2)
             temperatureUnit.innerText = 'F'
         }
         else
