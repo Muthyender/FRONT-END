@@ -56,7 +56,8 @@ const reducerFn = (state = initialState, action) =>
                 count: state.count - 1,
             }
 
-        default : return state
+        default : 
+            return state
     }
 }
 
