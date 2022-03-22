@@ -1,0 +1,48 @@
+*
+{
+  color:white;
+  text-align: center;
+}
+.App
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #634cec;
+}
+.browser
+{
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  min-width: 60%;
+  min-height: 50vh;
+  background-color: #ffb91f;
+}
+.tabs
+{
+  display: flex;
+  padding: 10px 10px 0 10px;
+  /* cursor: pointer; */
+}
+.tab
+{
+  padding: 10px 35px;
+  background-color: #634cec;
+  border-radius: 10px 10px 0 0;
+}
+.viewport
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  background-color: #5131a9;
+  font-size: larger;
+  border-radius: 0 0 10px 10px;
+}
+a
+{
+  text-decoration: none;
+}

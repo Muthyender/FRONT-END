@@ -31,6 +31,10 @@ function NavbarComponent() {
             <Nav.Link as={NavLink} to='/contact'>
                 Contact Us
             </Nav.Link>
+
+            <Nav.Link as={NavLink} to='/count'>
+                Count
+            </Nav.Link>
           </Nav>
 
           <Nav>
