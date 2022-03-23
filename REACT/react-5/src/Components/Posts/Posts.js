@@ -1,42 +1,50 @@
 import React, {useState, useEffect} from 'react'
 import {Card, Button, Row, Col, Spinner} from 'react-bootstrap'
-import axios from 'axios'
+// import axios from 'axios'
 import {Link} from 'react-router-dom'
-
-function Posts()
+import { fetchPosts } from '../../redux'
+import {connect} from 'react-redux'
+import Page404 from '../Page404'
+ 
+function Posts(props)
 {
-    const [posts, setPosts] = useState([])
+    // const [posts, setPosts] = useState([])
 
-    useEffect(() =>
-    {
+    // useEffect(() =>
+    // {
         //(API using Promise)
         // axios.get('https://jsonplaceholder.typicode.com/posts')
         // .then(response => setPosts(response.data))
         // .catch(err => console.log(err))
 
         //(API using Async and Await)
-        const fetchPosts = async() =>
-        {
-            try
-            {
-                const response =  await axios.get('https://jsonplaceholder.typicode.com/posts')
-                setPosts(response.data)
-            }
-            catch(err)
-            {
-                console.log(err)
-            }
-        }
+
+        // const fetchPosts = async() =>
+        // {
+        //     try
+        //     {
+        //         const response =  await axios.get('https://jsonplaceholder.typicode.com/posts')
+        //         setPosts(response.data)
+        //     }
+        //     catch(err)
+        //     {
+        //         console.log(err)
+        //     }
+        // }
         
-        fetchPosts()
+        // fetchPosts()
 
-    }, [])
+    // }, [])
 
-    return(
-        <>
-            <h1 className='text-center mt-2'>Posts</h1>
-            {!posts.length ? (<Spinner animation="border" className='d-block mx-auto mt-3'/>) :
-                (posts.map(post =>
+    useEffect(() =>
+        {
+            props.fetchPosts()
+        }, [])
+
+        const displayPostsInCardLayout = (props) =>
+        {
+            return(
+                props.posts.map(post =>
                     (
                         <Card  style={{width: '80%'}} className='mt-5 text-center mx-auto' bg='dark' text='light' key={post.id}>
 
@@ -72,12 +80,45 @@ function Posts()
                                 </Card.Footer>
                             </Link>
                         </Card>
-                    ))
-                )          
+                    )
+                )    
+            )
+        }
+
+    return(
+        <>
+            <h1 className='text-center mt-2'>Posts</h1>
+            {
+                (!props.loading) ? 
+                    (
+                        (!props.error) ? 
+                            displayPostsInCardLayout(props) : 
+                            // <h1>{props.error}</h1>
+                            <Page404 />
+                    ) :
+                    (<Spinner animation="border" className='d-block mx-auto mt-3'/>)     
             }
             
         </>
     )
 }
 
-export default Posts
+const mapStateToProps = (state) =>
+{
+  return{
+    posts: state.posts.posts,
+    error: state.posts.error,
+    loading: state.posts.loading,
+  }
+}
+
+const mapDispatchToProps = (dispatch) =>
+{
+  return{
+      fetchPosts: () => dispatch(fetchPosts())
+  }
+}
+
+export default connect(mapStateToProps,mapDispatchToProps)(Posts)
+
+// export default Posts

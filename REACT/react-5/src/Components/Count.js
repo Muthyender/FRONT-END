@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 // import incrementCounter from '../redux/count/action'
 import {incrementCounter, decrementCounter} from '../redux'
 import {connect} from 'react-redux'
@@ -37,7 +37,7 @@ function Count(props)
 const mapStateToProps = (state) =>
 {
   return{
-    count: state.count
+    count: state.count.count
   }
 }
 
