@@ -93,8 +93,8 @@ function Posts(props)
                     (
                         (!props.error) ? 
                             displayPostsInCardLayout(props) : 
-                            // <h1>{props.error}</h1>
-                            <Page404 />
+                            <h1>{props.error}</h1>
+                            // <Page404 />
                     ) :
                     (<Spinner animation="border" className='d-block mx-auto mt-3'/>)     
             }
