@@ -1,11 +1,16 @@
-**MARKDOWN**
+**<h1>MARKDOWN</h1>**
 
 A Markdown built with the help of react-markdown library.
 
+[LIVE DEMO](https://muthyender-markdown.netlify.app/)
+
+***<u>Using the App</u>***
+- Visit the Demo Link to open the Application.
+- Start typing in the text area to see the corresponding markdown simultaneously on the markdown preview provided next to the text area.
+- Not familiar with the markdown syntax? No problem, got you covered. Feel free to go through some basic sytax of a markdown.
+
 ***<u>Basic Syntax of Markdown</u>***
 ---
-
-<br>
 
 ---
 
