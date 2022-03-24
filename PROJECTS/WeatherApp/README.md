@@ -1,4 +1,4 @@
-**WEATHER APP**
+**<h1>WEATHER APP</h1>**
 
 A fully functional weather app with Celsius/Fahrenheit toggle which uses geolocation and a weather API. Made with help of HTML, CSS and JavaScript.
 
