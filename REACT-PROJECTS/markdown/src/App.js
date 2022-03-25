@@ -33,6 +33,11 @@ class App extends React.Component
       })
   }
 
+  // focus()
+  // {
+
+  // }
+
   componentDidMount()
   {
     setTimeout(this.changeLoader, 2000);
@@ -49,7 +54,7 @@ class App extends React.Component
 
     return(
       <div className="app" onChange={this.handleChange}>
-        <textarea />
+        <textarea autoFocus/>
         <ReactMarkdown className='preview' children={this.state.markdown} />
       </div>
     )
