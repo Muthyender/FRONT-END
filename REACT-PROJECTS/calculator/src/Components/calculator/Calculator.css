@@ -1,0 +1,19 @@
+body{
+    overflow: hidden;
+    user-select:none;
+}
+
+.calculator
+{
+    width: 500px;
+    margin: 3rem auto;
+}
+
+@media screen and (max-width: 500px) 
+{
+    .calculator
+    {
+        width: 99vw;
+        margin: 5px auto;
+    }
+}

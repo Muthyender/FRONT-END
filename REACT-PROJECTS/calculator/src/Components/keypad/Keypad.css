@@ -1,0 +1,5 @@
+.keypad
+{
+    display: flex;
+    flex-wrap: wrap;
+}
