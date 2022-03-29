@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useEffect} from 'react'
 import {Card, Button, Row, Col, Spinner} from 'react-bootstrap'
 // import axios from 'axios'
 import {useParams, Link} from 'react-router-dom'
@@ -9,7 +9,11 @@ import {useDispatch, useSelector} from 'react-redux'
 function Post()
 {
     //Using useDispatch and useSelector
-    const {post, loading, error} = useSelector(state => state.post)
+    const post = useSelector(state => state.post.post)
+    const loading = useSelector(state => state.post.loading)
+    const error = useSelector(state => state.post.error)
+
+    // const {post, loading, error} = useSelector(state => state.post)  //(Destructuring directly)
     const dispatch = useDispatch()
 
     // const [post, setPost] = useState('')
@@ -98,10 +102,10 @@ function Post()
                                         </Link>
 
                                     </Button>
-                                </>
+                                </> 
                             ) : ( 
                                     <>
-                                        <h1 className='text-center display-1 mt-5'>{error} {/*props.error*/}</h1>
+                                        <h1 className='text-center mt-5'>{error} {/*props.error*/}</h1>
 
                                         {/* <h1 className='text-center mt-3'>
                                             Go to <Link to='/'>Home</Link> Page

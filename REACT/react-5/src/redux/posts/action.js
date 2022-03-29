@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-//Action type constant
+//Action type constants
 export const FETCH_POSTS_REQUESTED = 'FETCH_POSTS_REQUESTED'
 export const FETCH_POSTS_SUCCESS = 'FETCH_POSTS_SUCCESS'
 export const FETCH_POSTS_FAILURE = 'FETCH_POSTS_FAILURE'
@@ -31,7 +31,8 @@ export const fetchPostsFailure = (error) =>
 
 export const fetchPosts = () =>
 {
-    return async (dispatch) => {
+    return async (dispatch) => 
+    {
         try
         {
             dispatch(fetchPostsRequested())

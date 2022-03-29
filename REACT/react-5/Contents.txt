@@ -5,3 +5,21 @@ react-router-dom - (App.js, Navbar.js)
 
 Params - (App.js)
 useParams() hook - (Post.js)
+
+NavLink - (NavbarComponent.js)
+
+Higher Order component - (App.js)
+
+Redux:
+    Action type constant, Action creator, Reducer function, redux store, Store.getState(), store.subscribe(), store.dispatch() - (redux.js, posts.js)
+    Payload, combineReducers() - (posts.js)
+    Redux Logger: 
+        applyMiddleWare(), createLogger() - (posts.js)
+
+React-Redux: (redux folder)
+    Provider - (App.js)
+    mapStateToProps(), mapDispatchToProps(), connect() - (Count.js, Posts.js, Post.js)
+    reduxThunk - (store.js)
+    redux DevTools - (store.js)
+    useDispatch, useSelector hook - (Post.js)
+        
