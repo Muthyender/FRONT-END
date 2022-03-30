@@ -11,7 +11,7 @@ function ReactMemo()
     const handleChangeInput = (e) =>
     {
         if(e.target.value.length <= 5)
-            setError('The length must be greater thana 5')
+            setError('The length must be greater than 5')
         else
             setError('')
             
@@ -26,6 +26,10 @@ function ReactMemo()
     return (
         <>
             <input type="text" onChange={handleChangeInput}/>
+
+            {
+                error.length ? <small>{error}</small> :null
+            }
 
             <button onClick={handleAddSkill}>Add Skill</button>
             <hr />
