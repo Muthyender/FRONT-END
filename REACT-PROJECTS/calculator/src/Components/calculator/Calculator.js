@@ -63,38 +63,38 @@ class Calculator extends React.Component
                 )
                 break;
             
-                case 'C' :
-                    str = str.slice(0,-2)
+            case 'C' :
+                str = str.slice(0,-2)
+                this.setState(
+                    {
+                        data: this.state.data.slice(0, -1)
+                    }
+                )
+                break;
+
+            case '=':
+                this.calculate()
+                break;
+
+            default:
+                if( (operators.includes(str.charAt(str.length-1)) && operators.includes(str.charAt(str.length-2)) ) || ( (str.charAt(str.length-1) === '.' || operators.includes(str.charAt(str.length-1)) ) && ( str.charAt(str.length-2) === '.' || operators.includes(str.charAt(str.length-2)) ) ) )
+                {
+                    str = str.slice(0, -2) + value
                     this.setState(
                         {
-                            data: this.state.data.slice(0, -1)
+                            data: this.state.data.slice(0, -1) + value
                         }
                     )
-                    break;
-
-                case '=':
-                    this.calculate()
-                    break;
-
-                default:
-                    if( (operators.includes(str.charAt(str.length-1)) && operators.includes(str.charAt(str.length-2)) ) || ( (str.charAt(str.length-1) === '.' || operators.includes(str.charAt(str.length-1)) ) && ( str.charAt(str.length-2) === '.' || operators.includes(str.charAt(str.length-2)) ) ) )
-                    {
-                        str = str.slice(0, -2) + value
-                        this.setState(
-                            {
-                                data: this.state.data.slice(0, -1) + value
-                            }
-                        )
-                    }
-                    else
-                    {
-                        this.setState(
-                            {
-                                data: str
-                            }
-                        )
-                    }
-                    break;
+                }
+                else
+                {
+                    this.setState(
+                        {
+                            data: str
+                        }
+                    )
+                }
+                break;
         }
     }
 
