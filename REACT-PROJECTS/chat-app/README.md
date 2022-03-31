@@ -7,5 +7,5 @@ A Chat App built using React.js which makes use of Chat Engine API and UI Kit sp
 ***<u>Using the App</u>***
 - Visit the Demo Link to open the Application.
 - Login with the credentials provided by the admin and start using the app.
-- No hassle of logging in every time, because local storage is implemented in the app to store the logged user.
+- No hassle of logging in every time, because local storage is implemented in the app to store the logged user's data.
 - Add friends, create new chats, send texts and images like a normal messaging app.
