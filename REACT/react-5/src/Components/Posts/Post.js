@@ -14,6 +14,7 @@ function Post()
     const error = useSelector(state => state.post.error)
 
     // const {post, loading, error} = useSelector(state => state.post)  //(Destructuring directly)
+    
     const dispatch = useDispatch()
 
     // const [post, setPost] = useState('')

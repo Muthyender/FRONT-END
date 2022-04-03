@@ -11,6 +11,7 @@ async function getQuotes() {
 
     let response = await fetch(apiURL)
     apiQuotes = await response.json()
+    console.log(apiQuotes)
 
     newQuote()
 }
