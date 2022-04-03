@@ -54,7 +54,7 @@ class App extends React.Component
 
     return(
       <div className="app" onChange={this.handleChange}>
-        <textarea autoFocus/>
+        <textarea placeholder='Start Typing' autoFocus/>
         <ReactMarkdown className='preview' children={this.state.markdown} />
       </div>
     )

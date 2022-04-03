@@ -9,6 +9,7 @@
     font-size: larger;
     background-color: #cad2c5;
     border: 1px solid rgba(0, 0, 0, 0.144);
+    border-radius: 0.5rem;
 }
 .button:hover
 {
