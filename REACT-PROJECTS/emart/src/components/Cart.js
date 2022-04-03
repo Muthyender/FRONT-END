@@ -48,7 +48,7 @@ function Cart()
         return(
             <div className="container my-4">
                     <hr />
-                    <Button variant='outline-dark' size='lg' className='my-3'>
+                    <Button variant='outline-dark' disabled='true' size='lg' className='my-3'>
                         <Link to='/checkout' style={{color:'inherit', textDecoration:'inherit'}}>Proceed to Checkout</Link>
                     </Button>
             </div>
