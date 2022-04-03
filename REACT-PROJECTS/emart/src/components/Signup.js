@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Modal, Button, Nav, Form } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-function Login() {
+function Signup() {
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
@@ -58,4 +58,4 @@ function Login() {
     );
 }
 
-export default Login
+export default Signup

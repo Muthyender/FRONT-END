@@ -55,7 +55,6 @@ function Cart()
         )
     }
 
-    console.log(state)
     return (
         <>
             {
