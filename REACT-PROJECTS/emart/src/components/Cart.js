@@ -30,7 +30,7 @@ function Cart()
                 <div className="col-md-5 align-items-center m-auto">
                     <h3>{product.title}</h3>
                     <p className='lead fw-bold'>
-                        {product.qty} x $ {product.price} = $ {product.qty * product.price}
+                        {product.qty} x $ {product.price} = $ {(product.qty * product.price).toFixed(2)}
                     </p>
                     <Button variant="outline-dark" onClick={() => dispatch(deleteCart(product))} className='mx-2'>
                         <FontAwesomeIcon icon="fa-solid fa-minus" />
@@ -48,7 +48,7 @@ function Cart()
         return(
             <div className="container my-4">
                     <hr />
-                    <Button variant='outline-dark' disabled='true' size='lg' className='my-3'>
+                    <Button variant='outline-dark' disabled={true} size='lg' className='my-3'>
                         <Link to='/checkout' style={{color:'inherit', textDecoration:'inherit'}}>Proceed to Checkout</Link>
                     </Button>
             </div>
