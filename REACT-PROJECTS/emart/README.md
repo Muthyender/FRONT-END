@@ -1,6 +1,6 @@
 **<h1>E MART</h1>**
 
-An E-commerce website built using React involving few dependencies with add to Cart, remove from Cart and product filter functionalities.
+An E-commerce website built using React involving few dependencies with add to Cart, remove from Cart and category filter functionalities.
 
 [LIVE DEMO](https://muthyender-emart.netlify.app/)
 
