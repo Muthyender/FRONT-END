@@ -1,0 +1,34 @@
+.top
+{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+label
+{
+    margin: 10px;
+    font-size: large;
+}
+
+.right
+{
+    text-align: right;
+}
+
+.filter
+{
+   
+    background-color: cornflowerblue;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 15px;
+    width: 100px;
+    margin: 0px;
+}
+
+hr
+{
+    margin: 0px;
+}

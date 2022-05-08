@@ -1,0 +1,91 @@
+.overlay
+{
+    min-height: 100vh;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 200ms;
+}
+.overlay-inner
+{
+    background-color: white;
+    width: 80%;
+    height: 550px;
+    padding: 1.5rem;
+    position: relative;
+    box-sizing: border-box;
+    overflow: scroll;
+    font-size: 1.3rem;
+}
+.overlay-inner .close
+{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 25px;
+    background-color: transparent;
+}
+.overlay-inner .close:hover
+{
+    color: blue;
+    transform: scale(1.1);
+}
+.overlay-inner .inner-box
+{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.overlay-inner .inner-box img
+{
+    margin-right: 20px;
+    width: 200px;
+    height: 250px;
+}
+.overlay-inner .inner-box h1
+{
+    font-size: 2rem;
+}
+.overlay-inner .inner-box h3
+{
+    font-family:cursive;
+    color:cornflowerblue;
+}
+.overlay-inner .inner-box h5
+{
+    font-family:cursive;
+}
+.overlay-inner .inner-box button
+{
+    width: 150px;
+    border-radius:  5px;
+    background-color: cornflowerblue;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 0.5rem;
+}
+.overlay-inner .description
+{
+    margin: 2rem 0;
+    text-align: justify;
+    font-size: 17px;
+}
+
+@media screen and (max-width: 650px) 
+{
+    .overlay-inner .inner-box
+    {
+        display: block;
+    }
+    .overlay-inner .inner-box h1
+    {
+        font-size: 1.5rem;
+    }
+}

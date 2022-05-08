@@ -1,0 +1,63 @@
+.books
+{
+    text-align: center;
+}
+
+.card
+{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.card:hover
+{
+    transform: scale(1.1);
+    transition: 200ms;
+}
+
+.card img
+{
+    border-radius: 10px 0 0 10px;
+    height: 300px;
+}
+
+.description
+{
+    line-height: 2;
+    margin: 10px;
+}
+
+.title
+{
+    line-height: 1;
+    margin-bottom: 10px;
+    font-size: x-large;
+    font-weight: bold;
+    color: green;
+}
+
+.price
+{
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: cornflowerblue;
+}
+
+@media screen and (max-width: 400px) 
+{
+    .card
+    {
+        width: 97vw;
+        margin:10px auto;
+    }
+
+    .card img
+    {
+        width: 180px;
+    }
+}

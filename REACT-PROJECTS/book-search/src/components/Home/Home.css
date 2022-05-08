@@ -1,0 +1,106 @@
+.header
+{
+    text-align: center;
+    color:rgb(13, 149, 194);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    height: 300px;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('https://www.itl.cat/pngfile/big/149-1491781_back-to-53-book-wallpapers-hd-law-book.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+input
+{
+    font-size: xx-large;
+    outline: none;
+    border: none;
+    padding: 7px 0 7px 12px;
+    border-radius: 5px 0 0 5px;
+}
+
+.fas
+{
+    padding: 14px 10px 10px;
+    font-size: x-large;
+    color: aliceblue;
+}
+
+button
+{
+    border: none;
+    outline: none;
+    background-color: gray;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+.content
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+    justify-content: space-evenly;
+    margin: 1rem auto;
+    padding: 0px;
+}
+
+/* @media screen and (max-width: 500px)
+{
+    .header
+    {
+        font-size: 3rem;
+    }
+
+    input
+    {
+        margin-top: 20px;
+        width: 250px;
+        font-size: x-large;
+        padding: 5px 0 5px 10px;
+    }
+
+    .fas
+    {
+        padding: 3px 5px 4px;
+        line-height: 1.2;
+        font-size: x-large;
+    }
+} */
+
+@media screen and (max-width: 500px)
+{
+    .header
+    {
+        font-size: 3rem;
+    }
+
+    input
+    {
+        margin-top: 20px;
+        width: 250px;
+        font-size: x-large;
+        padding: 5px 0 5px 10px;
+    }
+
+    .fas
+    {
+        padding: 3px 5px 4px;
+        line-height: 1.2;
+        font-size: x-large;
+    }
+}
+
+@media screen and (max-width: 400px)
+{
+    .content
+    {
+        display: block;
+        margin: 2rem auto;
+    }
+}
