@@ -31,7 +31,7 @@ function Books({book})
                                             <div className="price">&#8377;{price}</div>
                                         </div>
                                     </div>
-                                    {show && <Modal show={show} item={bookItem} closeModal={setShow}/> }
+                                    {show && <Modal onClose={() => setShow(false)} show={show} item={bookItem} /> }
                                 </div>
                             )
                     })
