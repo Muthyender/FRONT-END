@@ -19,9 +19,14 @@ function Home()
             alert('Please enter the name')
             
             axios.get(`https://www.googleapis.com/books/v1/volumes?q=${search}&key=AIzaSyBXAlkecJupAw52p3EWm6xHFR8Jx5e3knE&maxResults=40`)
-            .then(response => setBookData(response.data.items))
+            .then(response => 
+                    setBookData(response.data.items.filter(item =>
+                    {
+                        return item.volumeInfo.imageLinks && item.saleInfo.listPrice
+                    })
+                ))
             .catch(err => console.log(err))
-
+            
             setSearch("")
             setFunctionality(true)
         }
@@ -30,7 +35,12 @@ function Home()
     const searchClick = () =>
     {
         axios.get(`https://www.googleapis.com/books/v1/volumes?q=${search}&key=AIzaSyBXAlkecJupAw52p3EWm6xHFR8Jx5e3knE&maxResults=40`)
-            .then(response => setBookData(response.data.items))
+            .then(response => 
+                setBookData(response.data.items.filter(item =>
+                {
+                    return item.volumeInfo.imageLinks && item.saleInfo.listPrice
+                })
+            ))
             .catch(err => console.log(err))
 
             setSearch("")
@@ -53,13 +63,13 @@ function Home()
 
             <div>
                 {
-                    functionality && <Header />
+                    functionality && <Header book={bookData}/>
                 }
                 <div className='content'>
                     <Books book={bookData}/>
                 </div>
                 {
-                    functionality && <Buttons />
+                    functionality && <Buttons book={bookData}/>
                 }
             </div>
              

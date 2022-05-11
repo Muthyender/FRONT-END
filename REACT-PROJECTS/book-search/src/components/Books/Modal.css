@@ -7,7 +7,7 @@
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.4);
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,7 +15,7 @@
 }
 .overlay-inner
 {
-    background-color: white;
+    background-color:whitesmoke;
     width: 80%;
     height: 550px;
     padding: 1.5rem;

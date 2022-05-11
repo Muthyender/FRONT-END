@@ -8,7 +8,18 @@
 label
 {
     margin: 10px;
+    font-size: larger;
+    color: white;
+    font-weight: bold;
+    text-shadow:  0 0 2px black, 0 0 2px black;
+}
+
+select
+{
     font-size: large;
+    outline: none;
+    border: none;
+    border-radius: 5px;
 }
 
 .right

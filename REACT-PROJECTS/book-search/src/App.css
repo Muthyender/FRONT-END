@@ -1,5 +1,9 @@
 body
 {
+    background-image: url('https://www.itl.cat/pngfile/big/76-763324_download-wallpaper-background-aesthetic-book-covers.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: whitesmoke;
     margin: 0px;
     padding: 0px;
